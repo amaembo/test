@@ -1,1 +1,1 @@
-usernames = Users.where(:status => 1, :deleted => false).map{ |u| u.first_name.downcase }.reject{ |n| n == ‘john’ }.map{ |n| n.titleize }
+usernames = Users.where(:status => 1,  :deleted => false).map{ |u| u.first_name.upcase }.reject{ |n| n == ‘JOHN’ }.map{ |n| n.titleize }
